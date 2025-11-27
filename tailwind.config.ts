@@ -47,10 +47,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        brass: "hsl(var(--brass))",
-        "brass-glow": "hsl(var(--brass-glow))",
-        champagne: "hsl(var(--champagne))",
-        "deep-red": "hsl(var(--deep-red))",
+        // Octa Vitae custom colors
+        crimson: {
+          DEFAULT: "hsl(var(--crimson))",
+          deep: "hsl(var(--crimson-deep))",
+          glow: "hsl(var(--crimson-glow))",
+        },
+        cream: {
+          DEFAULT: "hsl(var(--cream))",
+          light: "hsl(var(--cream-light))",
+        },
+        "tan-gold": "hsl(var(--tan-gold))",
         noir: "hsl(var(--noir))",
         smoke: "hsl(var(--smoke))",
         sidebar: {
@@ -94,7 +101,8 @@ export default {
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "brass-gradient": "linear-gradient(135deg, hsl(42 76% 46%), hsl(38 70% 55%))",
+        "crimson-gradient": "linear-gradient(135deg, hsl(8 72% 38%), hsl(5 75% 28%))",
+        "cream-gradient": "linear-gradient(135deg, hsl(35 45% 75%), hsl(38 55% 55%))",
       },
     },
   },

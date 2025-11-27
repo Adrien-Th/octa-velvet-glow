@@ -6,23 +6,24 @@ export function Footer() {
           {/* Logo */}
           <a
             href="#"
-            className="font-display text-xl font-bold text-primary tracking-wide"
+            className="font-display text-xl font-bold italic tracking-wide"
           >
-            OCTA VITAE
+            <span className="text-primary">Octa</span>
+            <span className="text-secondary ml-1">Vitae</span>
           </a>
 
           {/* Links */}
           <nav className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
-            <a href="#services" className="hover:text-primary transition-colors">
+            <a href="#services" className="hover:text-secondary transition-colors">
               Services
             </a>
-            <a href="#portfolio" className="hover:text-primary transition-colors">
+            <a href="#portfolio" className="hover:text-secondary transition-colors">
               Portfolio
             </a>
-            <a href="#team" className="hover:text-primary transition-colors">
+            <a href="#team" className="hover:text-secondary transition-colors">
               Équipe
             </a>
-            <a href="#contact" className="hover:text-primary transition-colors">
+            <a href="#contact" className="hover:text-secondary transition-colors">
               Contact
             </a>
           </nav>

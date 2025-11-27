@@ -15,10 +15,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Premium brass CTA button
-        brass: "bg-gradient-to-r from-[hsl(42_76%_46%)] to-[hsl(38_70%_55%)] text-primary-foreground font-semibold uppercase tracking-wider shadow-[0_0_40px_hsl(42_76%_46%/0.3)] hover:shadow-[0_0_80px_hsl(42_76%_46%/0.4)] hover:scale-105 active:scale-100",
-        // Outline brass variant
-        "brass-outline": "border-2 border-primary text-primary bg-transparent hover:bg-primary/10 hover:shadow-[0_0_30px_hsl(42_76%_46%/0.3)] uppercase tracking-wider font-medium",
+        // Rouge cramoisi premium CTA
+        crimson: "bg-gradient-to-r from-[hsl(8_72%_38%)] to-[hsl(5_75%_28%)] text-[hsl(35_30%_92%)] font-semibold uppercase tracking-wider shadow-[0_0_40px_hsl(8_72%_38%/0.4)] hover:shadow-[0_0_80px_hsl(8_72%_38%/0.6)] hover:scale-105 active:scale-100",
+        // Outline crème/doré
+        "cream-outline": "border-2 border-secondary text-secondary bg-transparent hover:bg-secondary/10 hover:shadow-[0_0_30px_hsl(38_55%_55%/0.3)] uppercase tracking-wider font-medium",
+        // Ghost pour nav
+        "cream-ghost": "text-foreground/80 hover:text-secondary hover:bg-secondary/5 transition-colors",
       },
       size: {
         default: "h-10 px-4 py-2",

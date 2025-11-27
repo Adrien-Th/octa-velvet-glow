@@ -37,9 +37,10 @@ export function Navbar() {
           {/* Logo */}
           <a
             href="#"
-            className="font-display text-2xl md:text-3xl font-bold text-primary tracking-wide text-glow"
+            className="font-display text-2xl md:text-3xl font-bold italic tracking-wide"
           >
-            OCTA VITAE
+            <span className="text-primary text-glow-crimson">Octa</span>
+            <span className="text-secondary text-glow-cream ml-1">Vitae</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -48,12 +49,12 @@ export function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-medium text-foreground/70 hover:text-primary transition-colors duration-300 focus-visible-brass"
+                className="text-sm font-medium text-foreground/70 hover:text-secondary transition-colors duration-300 focus-visible-crimson"
               >
                 {link.label}
               </a>
             ))}
-            <Button variant="brass" size="sm" asChild>
+            <Button variant="crimson" size="sm" asChild>
               <a href="#contact">Nous contacter</a>
             </Button>
           </div>
@@ -61,7 +62,7 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors focus-visible-brass"
+            className="md:hidden p-2 text-foreground hover:text-primary transition-colors focus-visible-crimson"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -81,12 +82,12 @@ export function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors py-2 border-b border-border/30"
+                className="text-lg font-medium text-foreground/80 hover:text-secondary transition-colors py-2 border-b border-border/30"
               >
                 {link.label}
               </a>
             ))}
-            <Button variant="brass" className="mt-4" asChild>
+            <Button variant="crimson" className="mt-4" asChild>
               <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                 Nous contacter
               </a>

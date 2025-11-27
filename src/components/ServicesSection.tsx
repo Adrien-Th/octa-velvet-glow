@@ -48,7 +48,7 @@ function ServiceCard({ service, index }: { service: typeof services[0]; index: n
       </div>
 
       {/* Content */}
-      <h3 className="font-display text-xl md:text-2xl font-semibold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+      <h3 className="font-display text-xl md:text-2xl font-semibold mb-4 text-foreground group-hover:text-secondary transition-colors duration-300">
         {service.title}
       </h3>
       <p className="text-muted-foreground leading-relaxed">
@@ -66,8 +66,8 @@ export function ServicesSection() {
 
   return (
     <section id="services" className="section-padding bg-background relative overflow-hidden">
-      {/* Subtle background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(ellipse_at_center,hsl(42_76%_46%/0.03),transparent_60%)]" />
+      {/* Subtle background glow - rouge */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[radial-gradient(ellipse_at_center,hsl(8_72%_38%/0.03),transparent_60%)]" />
 
       <div className="container mx-auto relative z-10">
         {/* Section header */}
@@ -96,7 +96,7 @@ export function ServicesSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="brass-outline" size="lg" asChild>
+          <Button variant="cream-outline" size="lg" asChild>
             <a href="#contact">Nous contacter</a>
           </Button>
         </div>
