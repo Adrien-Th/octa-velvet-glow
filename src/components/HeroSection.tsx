@@ -1,9 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Play, ArrowDown } from 'lucide-react';
-
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cinematic">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cinematic">
       {/* Background gradient glow - rouge */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(8_72%_38%/0.08),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,hsl(38_55%_55%/0.05),transparent_50%)]" />
@@ -37,7 +35,7 @@ export function HeroSection() {
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up delay-300">
             <Button variant="crimson" size="xl" asChild>
-              <a href="#contact">
+              <a href="#contact" className="bg-primary">
                 Nous contacter
               </a>
             </Button>
@@ -59,6 +57,5 @@ export function HeroSection() {
       {/* Decorative lines - rouge/crème */}
       <div className="absolute top-0 left-1/4 w-px h-32 bg-gradient-to-b from-transparent via-primary/30 to-transparent" />
       <div className="absolute top-0 right-1/4 w-px h-48 bg-gradient-to-b from-transparent via-secondary/20 to-transparent" />
-    </section>
-  );
+    </section>;
 }
