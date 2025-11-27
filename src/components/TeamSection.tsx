@@ -28,7 +28,7 @@ function TeamCard({ member, index }: { member: typeof teamMembers[0]; index: num
       {/* Avatar placeholder */}
       <div className="relative mx-auto mb-5 w-28 h-28 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-muted to-card border-2 border-border/50 overflow-hidden group-hover:border-primary/50 transition-all duration-500">
         {/* Glow effect */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(42_76%_46%/0.1),transparent)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,hsl(8_72%_38%/0.1),transparent)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         
         {/* Initials */}
         <div className="absolute inset-0 flex items-center justify-center">
@@ -39,7 +39,7 @@ function TeamCard({ member, index }: { member: typeof teamMembers[0]; index: num
       </div>
 
       {/* Info */}
-      <h3 className="font-display text-lg md:text-xl font-semibold text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
+      <h3 className="font-display text-lg md:text-xl font-semibold text-foreground mb-1 group-hover:text-secondary transition-colors duration-300">
         {member.name}
       </h3>
       <p className="text-sm text-muted-foreground">
@@ -54,8 +54,8 @@ export function TeamSection() {
 
   return (
     <section id="team" className="section-padding bg-background relative overflow-hidden">
-      {/* Background accent */}
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[radial-gradient(ellipse_at_center,hsl(8_72%_35%/0.05),transparent_70%)]" />
+      {/* Background accent - crème */}
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[radial-gradient(ellipse_at_center,hsl(38_55%_55%/0.04),transparent_70%)]" />
 
       <div className="container mx-auto relative z-10">
         {/* Section header */}
@@ -84,7 +84,7 @@ export function TeamSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="brass-outline" size="lg" asChild>
+          <Button variant="cream-outline" size="lg" asChild>
             <a href="#contact">Rejoindre l'aventure</a>
           </Button>
         </div>

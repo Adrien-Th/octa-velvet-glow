@@ -14,8 +14,8 @@ const clients = [
 
 function LogoPlaceholder({ name }: { name: string }) {
   return (
-    <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center mx-8 opacity-50 hover:opacity-100 transition-opacity duration-300">
-      <span className="font-display text-lg text-muted-foreground tracking-wider">
+    <div className="flex-shrink-0 w-40 h-20 flex items-center justify-center mx-8 opacity-40 hover:opacity-80 transition-opacity duration-300">
+      <span className="font-display text-lg text-secondary/70 tracking-wider">
         {name}
       </span>
     </div>

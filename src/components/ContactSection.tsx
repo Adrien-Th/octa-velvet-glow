@@ -10,8 +10,8 @@ export function ContactSection() {
   return (
     <section id="contact" className="section-padding bg-background relative overflow-hidden">
       {/* Background effects */}
-      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(ellipse_at_center,hsl(42_76%_46%/0.05),transparent_60%)]" />
-      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,hsl(8_72%_35%/0.03),transparent_60%)]" />
+      <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[radial-gradient(ellipse_at_center,hsl(8_72%_38%/0.05),transparent_60%)]" />
+      <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,hsl(38_55%_55%/0.03),transparent_60%)]" />
 
       <div className="container mx-auto relative z-10">
         {/* Section header */}
@@ -133,7 +133,7 @@ export function ContactSection() {
               />
             </div>
 
-            <Button variant="brass" size="xl" className="w-full sm:w-auto">
+            <Button variant="crimson" size="xl" className="w-full sm:w-auto">
               Envoyer le message
             </Button>
           </form>

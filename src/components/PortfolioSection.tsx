@@ -35,21 +35,21 @@ function PortfolioCard({ item, index }: { item: typeof portfolioItems[0]; index:
       <div className="absolute inset-0 bg-gradient-to-br from-muted/50 to-noir" />
       
       {/* Pattern overlay */}
-      <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23C9A227%22 fill-opacity=%220.4%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]" />
+      <div className="absolute inset-0 opacity-10 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23A33%22 fill-opacity=%220.4%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]" />
 
       {/* Hover overlay */}
       <div className="absolute inset-0 bg-noir/70 opacity-0 group-hover:opacity-100 transition-all duration-500" />
 
       {/* Play button */}
       <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-75 group-hover:scale-100">
-        <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/90 flex items-center justify-center glow-brass">
+        <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/90 flex items-center justify-center glow-crimson">
           <Play className="w-6 h-6 md:w-8 md:h-8 text-primary-foreground ml-1" />
         </div>
       </div>
 
       {/* Content */}
       <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-        <p className="text-primary text-xs md:text-sm uppercase tracking-wider mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <p className="text-secondary text-xs md:text-sm uppercase tracking-wider mb-1 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           {item.category}
         </p>
         <h3 className="font-display text-lg md:text-2xl font-semibold text-foreground">
@@ -68,8 +68,8 @@ export function PortfolioSection() {
 
   return (
     <section id="portfolio" className="section-padding bg-smoke/30 relative overflow-hidden">
-      {/* Background glow */}
-      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,hsl(42_76%_46%/0.04),transparent_60%)]" />
+      {/* Background glow - rouge */}
+      <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-[radial-gradient(ellipse_at_center,hsl(8_72%_38%/0.04),transparent_60%)]" />
 
       <div className="container mx-auto relative z-10">
         {/* Section header */}
@@ -98,7 +98,7 @@ export function PortfolioSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="brass-outline" size="lg" asChild>
+          <Button variant="cream-outline" size="lg" asChild>
             <a href="#contact">Discuter de votre projet</a>
           </Button>
         </div>
