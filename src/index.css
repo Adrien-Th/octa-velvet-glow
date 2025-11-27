@@ -8,6 +8,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
 @layer base {
   :root {
     /* Fond noir chaud très sombre */
@@ -75,6 +79,12 @@
     --sidebar-accent-foreground: 35 25% 88%;
     --sidebar-border: 25 18% 16%;
     --sidebar-ring: 8 72% 38%;
+    --font-sans: Poppins, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --font-serif: "Libre Baskerville", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
+  }
+  .dark {
+    --font-sans: Poppins, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --font-serif: "Libre Baskerville", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
   }
 }
 

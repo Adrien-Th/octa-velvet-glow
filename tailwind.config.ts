@@ -76,7 +76,7 @@ export default {
   				'serif'
   			],
   			sans: [
-  				'Inter',
+  				'Poppins',
   				'ui-sans-serif',
   				'system-ui',
   				'sans-serif',
@@ -86,6 +86,7 @@ export default {
   				'Noto Color Emoji'
   			],
   			serif: [
+  				'Libre Baskerville',
   				'ui-serif',
   				'Georgia',
   				'Cambria',
