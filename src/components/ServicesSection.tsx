@@ -96,7 +96,7 @@ export function ServicesSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="cream-outline" size="lg" asChild>
+          <Button variant="champagne-outline" size="lg" asChild>
             <a href="#contact">Nous contacter</a>
           </Button>
         </div>

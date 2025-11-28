@@ -32,12 +32,12 @@ export function HeroSection() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up delay-300">
-            <Button variant="crimson" size="xl" asChild>
+            <Button variant="champagne" size="xl" asChild>
               <a href="#contact">
                 Nous contacter
               </a>
             </Button>
-            <Button variant="cream-outline" size="lg" className="gap-3">
+            <Button variant="champagne-outline" size="lg" className="gap-3">
               <Play className="w-5 h-5" />
               Voir nos créations
             </Button>

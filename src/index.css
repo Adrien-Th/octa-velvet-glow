@@ -3,92 +3,87 @@
 @tailwind utilities;
 
 /* Octa Vitae - Casino Vintage Cinématographique */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap');
-
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
-
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+/* Typographies: Montserrat (titres), Lato (corps) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Lato:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Fond noir chaud très sombre */
-    --background: 15 20% 5%;
-    --foreground: 35 25% 88%;
+    /* PALETTE OCTA VITAE - Dominantes du logo */
+    /* Fond très sombre: #050405 */
+    --background: 300 14% 2%;
+    --foreground: 30 20% 95%;
 
-    --card: 15 18% 8%;
-    --card-foreground: 35 25% 88%;
+    /* Surface sombre: #0f0d0c */
+    --card: 20 15% 4%;
+    --card-foreground: 30 20% 95%;
 
-    --popover: 15 18% 7%;
-    --popover-foreground: 35 25% 88%;
+    --popover: 20 15% 4%;
+    --popover-foreground: 30 20% 95%;
 
-    /* Rouge cramoisi profond - couleur primaire */
-    --primary: 38 92.126% 50.1961%;
-    --primary-foreground: 35 30% 92%;
+    /* Accent laiton/champagne: #D4B78A - Couleur primaire */
+    --primary: 38 50% 68%;
+    --primary-foreground: 300 14% 2%;
 
-    /* Crème doré - accent secondaire */
-    --secondary: 35 45% 75%;
-    --secondary-foreground: 15 20% 8%;
+    /* Rouge profond: #8B1E1E - Accent secondaire */
+    --secondary: 0 65% 33%;
+    --secondary-foreground: 30 20% 95%;
 
     /* Tons atténués */
-    --muted: 15 12% 14%;
-    --muted-foreground: 30 15% 50%;
+    --muted: 20 10% 8%;
+    --muted-foreground: 30 15% 55%;
 
-    /* Or/tan accent pour highlights */
-    --accent: 38 55% 55%;
-    --accent-foreground: 15 20% 8%;
+    /* Or chaud (glow): #C88F3A */
+    --accent: 35 56% 50%;
+    --accent-foreground: 300 14% 2%;
 
-    --destructive: 32 94.6188% 43.7255%;
-    --destructive-foreground: 35 30% 92%;
+    --destructive: 0 65% 33%;
+    --destructive-foreground: 30 20% 95%;
 
-    --border: 25 18% 16%;
-    --input: 25 15% 13%;
-    --ring: 32 94.6188% 43.7255%;
+    --border: 20 15% 12%;
+    --input: 20 12% 8%;
+    --ring: 35 56% 50%;
 
     --radius: 0.5rem;
 
     /* Custom tokens Octa Vitae */
-    --crimson: 8 72% 38%;
-    --crimson-deep: 5 75% 28%;
-    --crimson-glow: 8 80% 48%;
-    --cream: 35 45% 75%;
-    --cream-light: 38 50% 85%;
-    --tan-gold: 38 55% 55%;
-    --noir: 15 20% 3%;
-    --smoke: 15 15% 10%;
+    --noir: 300 14% 2%;
+    --surface: 20 15% 4%;
+    --champagne: 38 50% 68%;
+    --rouge-profond: 0 65% 33%;
+    --or-chaud: 35 56% 50%;
+    --texte-clair: 30 20% 95%;
 
     /* Gradients */
-    --gradient-crimson: linear-gradient(135deg, hsl(8 72% 38%), hsl(5 75% 28%));
-    --gradient-cream: linear-gradient(135deg, hsl(35 45% 75%), hsl(38 55% 55%));
-    --gradient-dark: linear-gradient(180deg, hsl(15 18% 8%), hsl(15 20% 3%));
+    --gradient-glow: linear-gradient(135deg, hsl(38 50% 68%), hsl(35 56% 50%));
+    --gradient-dark: linear-gradient(180deg, hsl(20 15% 4%), hsl(300 14% 2%));
+    --gradient-vignette: radial-gradient(ellipse at center, transparent 0%, hsl(300 14% 2% / 0.8) 100%);
 
-    /* Shadows et Glow */
-    --shadow-crimson: 0 0 40px hsl(8 72% 38% / 0.4);
-    --shadow-crimson-lg: 0 0 80px hsl(8 72% 38% / 0.5);
-    --shadow-cream: 0 0 30px hsl(38 55% 55% / 0.3);
+    /* Shadows et Glow - Or chaud */
+    --shadow-glow: 0 6px 30px hsl(35 56% 50% / 0.16), 0 0 18px hsl(35 56% 50% / 0.10);
+    --shadow-glow-lg: 0 8px 40px hsl(35 56% 50% / 0.24), 0 0 30px hsl(35 56% 50% / 0.15);
     --shadow-deep: 0 25px 50px -12px hsl(0 0% 0% / 0.8);
     --shadow-card: 0 4px 30px hsl(0 0% 0% / 0.6);
 
-    --sidebar-background: 15 20% 5%;
-    --sidebar-foreground: 35 25% 88%;
-    --sidebar-primary: 8 72% 38%;
-    --sidebar-primary-foreground: 35 30% 92%;
-    --sidebar-accent: 15 15% 12%;
-    --sidebar-accent-foreground: 35 25% 88%;
-    --sidebar-border: 25 18% 16%;
-    --sidebar-ring: 8 72% 38%;
-    --font-sans: Poppins, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    --font-serif: "Libre Baskerville", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
-    --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    /* Focus styles */
+    --focus-ring: 0 0 0 2px hsl(38 50% 68% / 0.5);
+
+    --sidebar-background: 300 14% 2%;
+    --sidebar-foreground: 30 20% 95%;
+    --sidebar-primary: 38 50% 68%;
+    --sidebar-primary-foreground: 300 14% 2%;
+    --sidebar-accent: 20 15% 6%;
+    --sidebar-accent-foreground: 30 20% 95%;
+    --sidebar-border: 20 15% 12%;
+    --sidebar-ring: 35 56% 50%;
+
+    /* Fonts */
+    --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+    --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
   }
+
   .dark {
-    --font-sans: Poppins, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-    --font-serif: "Libre Baskerville", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
-    --font-mono: "Space Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+    --font-heading: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
   }
 }
 
@@ -103,16 +98,34 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-sans);
+    font-size: 18px;
+    line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  /* Typography scale */
+  h1 {
+    @apply text-[32px] md:text-[42px] lg:text-[54px];
+  }
+
+  h2 {
+    @apply text-[22px] md:text-[28px] lg:text-[34px];
+  }
+
+  /* Focus styles visibles */
+  *:focus-visible {
+    outline: 2px solid hsl(var(--primary));
+    outline-offset: 2px;
   }
 }
 
 @layer components {
-  /* Film grain overlay - plus prononcé */
+  /* Film grain overlay - CSS noise */
   .grain-overlay {
     position: fixed;
     top: 0;
@@ -122,94 +135,75 @@
     pointer-events: none;
     z-index: 9999;
     opacity: 0.06;
+    mix-blend-mode: overlay;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
   }
 
-  /* Glow effects - rouge cramoisi */
-  .glow-crimson {
-    box-shadow: var(--shadow-crimson);
-    transition: box-shadow 0.4s ease;
+  /* Glow effect - utilitaire réutilisable */
+  .glow {
+    box-shadow: var(--shadow-glow);
+    filter: drop-shadow(0 6px 18px hsl(35 56% 50% / 0.06));
+    transition: all 0.22s ease;
   }
 
-  .glow-crimson:hover {
-    box-shadow: var(--shadow-crimson-lg);
+  .glow:hover {
+    box-shadow: var(--shadow-glow-lg);
   }
 
-  .glow-cream {
-    box-shadow: var(--shadow-cream);
+  .text-glow {
+    text-shadow: 0 0 30px hsl(35 56% 50% / 0.5);
   }
 
-  .text-glow-crimson {
-    text-shadow: 0 0 30px hsl(8 72% 38% / 0.6);
-  }
-
-  .text-glow-cream {
-    text-shadow: 0 0 20px hsl(38 55% 55% / 0.4);
-  }
-
-  /* Cinematic gradient backgrounds */
-  .bg-cinematic {
-    background: linear-gradient(180deg, 
-      hsl(15 18% 7%) 0%, 
-      hsl(15 20% 4%) 50%,
-      hsl(15 20% 2%) 100%
-    );
-  }
-
+  /* Vignette cinématographique */
   .bg-vignette {
-    background: radial-gradient(ellipse at center, transparent 0%, hsl(0 0% 0% / 0.5) 100%);
+    background: radial-gradient(ellipse at center, transparent 0%, hsl(300 14% 2% / 0.7) 100%);
   }
 
-  /* Spotlight effect */
+  /* Spotlight effect pour hero */
   .bg-spotlight {
-    background: radial-gradient(ellipse at bottom center, hsl(35 20% 15% / 0.3) 0%, transparent 60%);
+    background: radial-gradient(ellipse 80% 50% at 50% 80%, hsl(35 56% 50% / 0.08) 0%, transparent 60%);
   }
 
-  /* Section styling */
+  /* Section padding */
   .section-padding {
-    @apply px-4 py-20 md:px-8 md:py-28 lg:px-16 lg:py-32;
+    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16 lg:py-32;
   }
 
-  /* Hover animations */
+  /* Hover lift + glow animation */
   .hover-lift {
-    @apply transition-all duration-500 ease-out;
+    @apply transition-all duration-200 ease-out;
   }
 
   .hover-lift:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px) scale(1.02);
   }
 
-  /* Focus styles for accessibility */
-  .focus-visible-crimson:focus-visible {
-    @apply outline-none ring-2 ring-primary ring-offset-2 ring-offset-background;
+  /* Card avec glow au hover */
+  .card-glow {
+    @apply transition-all duration-200 ease-out;
   }
 
-  /* Vintage text styling */
-  .text-vintage {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
+  .card-glow:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-glow);
   }
 }
 
 @layer utilities {
-  /* Animation utilities */
+  /* Fade-in animations */
   .animate-fade-up {
-    animation: fadeUp 0.8s ease-out forwards;
+    animation: fadeUp 0.6s ease-out forwards;
     opacity: 0;
   }
 
   .animate-fade-in {
-    animation: fadeIn 1s ease-out forwards;
-  }
-
-  .animate-glow-pulse {
-    animation: glowPulse 3s ease-in-out infinite;
+    animation: fadeIn 0.8s ease-out forwards;
   }
 
   @keyframes fadeUp {
     from {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(30px);
     }
     to {
       opacity: 1;
@@ -222,15 +216,23 @@
     to { opacity: 1; }
   }
 
-  @keyframes glowPulse {
-    0%, 100% {
-      box-shadow: 0 0 20px hsl(8 72% 38% / 0.4);
+  /* Slide animation pour timeline */
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
     }
-    50% {
-      box-shadow: 0 0 50px hsl(8 72% 38% / 0.6);
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 
+  .animate-slide-in {
+    animation: slideIn 0.5s ease-out forwards;
+  }
+
+  /* Slider logos */
   @keyframes slideLeft {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
@@ -240,10 +242,27 @@
     animation: slideLeft 30s linear infinite;
   }
 
+  .animate-slide-left:hover {
+    animation-play-state: paused;
+  }
+
   /* Stagger delays */
   .delay-100 { animation-delay: 100ms; }
   .delay-200 { animation-delay: 200ms; }
   .delay-300 { animation-delay: 300ms; }
   .delay-400 { animation-delay: 400ms; }
   .delay-500 { animation-delay: 500ms; }
+  .delay-600 { animation-delay: 600ms; }
+  .delay-700 { animation-delay: 700ms; }
+  .delay-800 { animation-delay: 800ms; }
+
+  /* Scroll indicator bounce */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+
+  .animate-bounce-slow {
+    animation: bounce 2s ease-in-out infinite;
+  }
 }

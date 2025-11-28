@@ -84,7 +84,7 @@ export function TeamSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="cream-outline" size="lg" asChild>
+          <Button variant="champagne-outline" size="lg" asChild>
             <a href="#contact">Rejoindre l'aventure</a>
           </Button>
         </div>

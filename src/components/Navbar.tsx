@@ -54,7 +54,7 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button variant="crimson" size="sm" asChild>
+            <Button variant="champagne" size="sm" asChild>
               <a href="#contact">Nous contacter</a>
             </Button>
           </div>
@@ -87,7 +87,7 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button variant="crimson" className="mt-4" asChild>
+            <Button variant="champagne" className="mt-4" asChild>
               <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
                 Nous contacter
               </a>
