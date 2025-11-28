@@ -1,9 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Play, ArrowDown } from 'lucide-react';
-
 export function HeroSection() {
-  return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cinematic">
+  return <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cinematic">
       {/* Background gradient glow - rouge */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(8_72%_38%/0.08),transparent_50%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,hsl(38_55%_55%/0.05),transparent_50%)]" />
@@ -18,9 +16,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Overline */}
-          <p className="text-secondary/80 uppercase tracking-[0.3em] text-sm md:text-base mb-6 animate-fade-up">
-            Production Vidéo Premium
-          </p>
+          <p className="text-secondary/80 uppercase tracking-[0.3em] text-sm md:text-base mb-6 animate-fade-up">PRODUCTION VIDÉO</p>
 
           {/* Main headline - style vintage */}
           <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 animate-fade-up delay-100">
@@ -59,6 +55,5 @@ export function HeroSection() {
       {/* Decorative lines - rouge/crème */}
       <div className="absolute top-0 left-1/4 w-px h-32 bg-gradient-to-b from-transparent via-primary/30 to-transparent" />
       <div className="absolute top-0 right-1/4 w-px h-48 bg-gradient-to-b from-transparent via-secondary/20 to-transparent" />
-    </section>
-  );
+    </section>;
 }
