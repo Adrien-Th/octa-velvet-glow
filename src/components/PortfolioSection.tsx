@@ -98,7 +98,7 @@ export function PortfolioSection() {
 
         {/* CTA */}
         <div className="text-center">
-          <Button variant="cream-outline" size="lg" asChild>
+          <Button variant="champagne-outline" size="lg" asChild>
             <a href="#contact">Discuter de votre projet</a>
           </Button>
         </div>

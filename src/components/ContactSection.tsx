@@ -133,7 +133,7 @@ export function ContactSection() {
               />
             </div>
 
-            <Button variant="crimson" size="xl" className="w-full sm:w-auto">
+            <Button variant="champagne" size="xl" className="w-full sm:w-auto">
               Envoyer le message
             </Button>
           </form>
